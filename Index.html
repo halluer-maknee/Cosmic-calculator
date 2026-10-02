@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cosmic Love Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="space">
+
+  <div class="stars"></div>
+
+  <div class="earth"></div>
+  <div class="planet"></div>
+  <div class="spaceship ship1">🚀</div>
+  <div class="spaceship ship2">🛸</div>
+  <div class="astronaut">🧑‍🚀</div>
+
+  <!-- Put your own flower-man image here -->
+  <img src="assets/flower-man.png" class="meme meme1">
+  <img src="assets/flower-man.png" class="meme meme2">
+  <img src="assets/flower-man.png" class="meme meme3">
+
+  <main>
+
+    <!-- CALCULATOR -->
+    <section class="calculator">
+
+      <h3>COSMIC CALCULATOR</h3>
+
+      <div id="display">0</div>
+
+      <div class="buttons">
+        <button onclick="clearDisplay()">AC</button>
+        <button onclick="backspace()">⌫</button>
+        <button onclick="press('%')">%</button>
+        <button class="operator" onclick="press('/')">÷</button>
+
+        <button onclick="press('7')">7</button>
+        <button onclick="press('8')">8</button>
+        <button onclick="press('9')">9</button>
+        <button class="operator" onclick="press('*')">×</button>
+
+        <button onclick="press('4')">4</button>
+        <button onclick="press('5')">5</button>
+        <button onclick="press('6')">6</button>
+        <button class="operator" onclick="press('-')">−</button>
+
+        <button onclick="press('1')">1</button>
+        <button onclick="press('2')">2</button>
+        <button onclick="press('3')">3</button>
+        <button class="operator" onclick="press('+')">+</button>
+
+        <button class="zero" onclick="press('0')">0</button>
+        <button onclick="press('.')">.</button>
+        <button class="equals" onclick="calculate()">=</button>
+      </div>
+
+    </section>
+
+
+    <!-- SONG / LYRICS -->
+    <section class="lyrics-box">
+
+      <div class="song-title">
+        <small>NOW PLAYING</small>
+        <h1 id="songTitle">Cosmic Silence</h1>
+      </div>
+
+      <div class="album"></div>
+
+      <div id="lyrics">
+        Enter a special equation...
+      </div>
+
+      <div class="progress">
+        <div id="progressBar"></div>
+      </div>
+
+      <button class="stop" onclick="stopSong()">STOP</button>
+
+    </section>
+
+  </main>
+
+</div>
+
+
+<!-- YOUR AUDIO FILES -->
+<audio id="pagIbig" src="assets/pag-ibig.mp3"></audio>
+<audio id="sino" src="assets/sino.mp3"></audio>
+<audio id="niki" src="assets/niki.mp3"></audio>
+
+
+<script src="script.js"></script>
+
+</body>
+          </html>
