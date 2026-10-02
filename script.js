@@ -1,18 +1,3 @@
-console.log("SCRIPT.JS IS WORKING!");
-
-document.addEventListener("DOMContentLoaded", function () {
-  console.log("DOM IS READY");
-
-  const buttons = document.querySelectorAll("button");
-
-  console.log("BUTTONS FOUND:", buttons.length);
-
-  buttons.forEach(function (button) {
-    button.addEventListener("click", function () {
-      console.log("CLICKED:", button.textContent);
-    });
-  });
-});
 const display = document.getElementById("display");
 
 let expression = "";
