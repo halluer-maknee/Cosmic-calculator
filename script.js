@@ -1,3 +1,18 @@
+console.log("SCRIPT.JS IS WORKING!");
+
+document.addEventListener("DOMContentLoaded", function () {
+  console.log("DOM IS READY");
+
+  const buttons = document.querySelectorAll("button");
+
+  console.log("BUTTONS FOUND:", buttons.length);
+
+  buttons.forEach(function (button) {
+    button.addEventListener("click", function () {
+      console.log("CLICKED:", button.textContent);
+    });
+  });
+});
 const display = document.getElementById("display");
 
 let expression = "";
@@ -336,36 +351,5 @@ event.key === "Escape"
 clearDisplay();
 
 }
-/* FINAL CLICK FIX */
-.space {
-  pointer-events: none;
-}
 
-main {
-  pointer-events: auto;
-  position: relative;
-  z-index: 999;
-}
-
-.calculator,
-.buttons,
-button {
-  pointer-events: auto;
-}
-
-button {
-  position: relative;
-  z-index: 1000;
-  cursor: pointer;
-}
-
-.made-by,
-.stars,
-.earth,
-.planet,
-.spaceship,
-.astronaut,
-.meme {
-  pointer-events: none;
-}
 });
