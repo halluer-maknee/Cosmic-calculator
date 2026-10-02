@@ -336,5 +336,36 @@ event.key === "Escape"
 clearDisplay();
 
 }
+/* FINAL CLICK FIX */
+.space {
+  pointer-events: none;
+}
 
+main {
+  pointer-events: auto;
+  position: relative;
+  z-index: 999;
+}
+
+.calculator,
+.buttons,
+button {
+  pointer-events: auto;
+}
+
+button {
+  position: relative;
+  z-index: 1000;
+  cursor: pointer;
+}
+
+.made-by,
+.stars,
+.earth,
+.planet,
+.spaceship,
+.astronaut,
+.meme {
+  pointer-events: none;
+}
 });
