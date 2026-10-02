@@ -24,32 +24,32 @@ const songs = {
 
   pagibig: {
 
-    title: "Pag-Ibig — Ace Banzuelo",
+  title: "Pag-Ibig — Ace Banzuelo",
 
-    audio: document.getElementById("pagIbig"),
+  audio: document.getElementById("pagIbig"),
 
-    lyrics: [
-{ time: 0,  text: "Kung meron man nagpaparamdam..." },
-{ time: 4,  text: "Nilalayo ang sarili" },
-{ time: 7,  text: "Ayaw matulad sa dati" },
-{ time: 11, text: "'Di ko alam ang dapat sabihin" },
-{ time: 15, text: "'Di ko alam ang dapat aminin" },
-{ time: 22, text: "'Di ko alam kung kailan, paano" },
-{ time: 27, text: "Nalimutang pag-ibig" },
-{ time: 29, text: "Meron bang pipili sa 'kin?" },
-{ time: 32, text: "Meron ba?" },
-{ time: 34, text: "Meron ba?" },
-{ time: 36, text: "Meron bang pipili sa 'kin?" },
-{ time: 39, text: "Meron ba?" },
-{ time: 41, text: "Meron ba?" },
-{ time: 43, text: "Meron bang pipili sa 'kin?" },
-{ time: 46, text: "Meron ba?" },
-{ time: 48, text: "Meron ba?" },
-{ time: 50, text: "Meron bang pipili sa 'kin?" }
-{ time: 53, text: "Oh" }
-]
+  lyrics: [
+    { time: 0, text: "Kung meron man nagpaparamdam..." },
+    { time: 4, text: "Nilalayo ang sarili" },
+    { time: 7, text: "Ayaw matulad sa dati" },
+    { time: 11, text: "'Di ko alam ang dapat sabihin" },
+    { time: 15, text: "'Di ko alam ang dapat aminin" },
+    { time: 22, text: "'Di ko alam kung kailan, paano" },
+    { time: 27, text: "Nalimutang pag-ibig" },
+    { time: 29, text: "Meron bang pipili sa 'kin?" },
+    { time: 32, text: "Meron ba?" },
+    { time: 34, text: "Meron ba?" },
+    { time: 36, text: "Meron bang pipili sa 'kin?" },
+    { time: 39, text: "Meron ba?" },
+    { time: 41, text: "Meron ba?" },
+    { time: 43, text: "Meron bang pipili sa 'kin?" },
+    { time: 46, text: "Meron ba?" },
+    { time: 48, text: "Meron ba?" },
+    { time: 50, text: "Meron bang pipili sa 'kin?" },
+    { time: 53, text: "Oh" }
+  ]
 
-  },
+},
 
 
   sino: {
