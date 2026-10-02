@@ -1,107 +1,81 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cosmic Love Calculator</title>
   <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-
-<div class="space">
-
-  <div class="stars"></div>
-
-  <div class="earth"></div>
-  <div class="planet"></div>
-  <div class="spaceship ship1">🚀</div>
+</head><body><div class="space">  <div class="stars"></div>  <div class="earth"></div>
+  <div class="planet"></div>  <div class="spaceship ship1">🚀</div>
   <div class="spaceship ship2">🛸</div>
-  <div class="astronaut">🧑‍🚀</div>
+  <div class="astronaut">🧑‍🚀</div>  <!-- FLOWER MAN -->  <img src="assets/flower-man-1.png" class="meme meme1" alt="Flower Man 1">
+  <img src="assets/flower-man-2.png" class="meme meme2" alt="Flower Man 2">
+  <img src="assets/flower-man-3.png" class="meme meme3" alt="Flower Man 3">  <!-- MADE BY -->  <div class="made-by">
+    <span>Made with</span>
+    <span class="heart">♥</span>
+    <span class="karaoke-text">by: A-Calzo</span>
+  </div>  <main><!-- CALCULATOR -->
+<section class="calculator">
 
-  <!-- Put your own flower-man image here -->
-  <img src="assets/flower-man-1.png" class="meme meme1">
-  <img src="assets/flower-man-2.png" class="meme meme2">
-  <img src="assets/flower-man-3.png" class="meme meme3">
-  
-<div class="made-by">
-  <span>Made with</span>
-  <span class="heart">♥</span>
-  <span class="karaoke-text">by: A-Calzo </span>
-</div>
-  
-  <main>
+  <h3>COSMIC CALCULATOR</h3>
 
-    <!-- CALCULATOR -->
-    <section class="calculator">
+  <div id="display">0</div>
 
-      <h3>COSMIC CALCULATOR</h3>
+  <div class="buttons">
 
-      <div id="display">0</div>
+    <button onclick="clearDisplay()">AC</button>
+    <button onclick="backspace()">⌫</button>
+    <button onclick="press('%')">%</button>
+    <button class="operator" onclick="press('/')">÷</button>
 
-      <div class="buttons">
-        <button onclick="clearDisplay()">AC</button>
-        <button onclick="backspace()">⌫</button>
-        <button onclick="press('%')">%</button>
-        <button class="operator" onclick="press('/')">÷</button>
+    <button onclick="press('7')">7</button>
+    <button onclick="press('8')">8</button>
+    <button onclick="press('9')">9</button>
+    <button class="operator" onclick="press('*')">×</button>
 
-        <button onclick="press('7')">7</button>
-        <button onclick="press('8')">8</button>
-        <button onclick="press('9')">9</button>
-        <button class="operator" onclick="press('*')">×</button>
+    <button onclick="press('4')">4</button>
+    <button onclick="press('5')">5</button>
+    <button onclick="press('6')">6</button>
+    <button class="operator" onclick="press('-')">−</button>
 
-        <button onclick="press('4')">4</button>
-        <button onclick="press('5')">5</button>
-        <button onclick="press('6')">6</button>
-        <button class="operator" onclick="press('-')">−</button>
+    <button onclick="press('1')">1</button>
+    <button onclick="press('2')">2</button>
+    <button onclick="press('3')">3</button>
+    <button class="operator" onclick="press('+')">+</button>
 
-        <button onclick="press('1')">1</button>
-        <button onclick="press('2')">2</button>
-        <button onclick="press('3')">3</button>
-        <button class="operator" onclick="press('+')">+</button>
+    <button class="zero" onclick="press('0')">0</button>
+    <button onclick="press('.')">.</button>
+    <button class="equals" onclick="calculate()">=</button>
 
-        <button class="zero" onclick="press('0')">0</button>
-        <button onclick="press('.')">.</button>
-        <button class="equals" onclick="calculate()">=</button>
-      </div>
+  </div>
 
-    </section>
+</section>
 
 
-    <!-- SONG / LYRICS -->
-    <section class="lyrics-box">
+<!-- SONG / LYRICS -->
+<section class="lyrics-box">
 
-      <div class="song-title">
-        <small>NOW PLAYING</small>
-        <h1 id="songTitle">Cosmic Silence</h1>
-      </div>
+  <div class="song-title">
+    <small>NOW PLAYING</small>
+    <h1 id="songTitle">Cosmic Silence</h1>
+  </div>
 
-      <div class="album"></div>
+  <div class="album"></div>
 
-      <div id="lyrics">
-        Enter a special equation...
-      </div>
+  <div id="lyrics">
+    Enter a special equation...
+  </div>
 
-      <div class="progress">
-        <div id="progressBar"></div>
-      </div>
+  <div class="progress">
+    <div id="progressBar"></div>
+  </div>
 
-      <button class="stop" onclick="stopSong()">STOP</button>
+  <button class="stop" onclick="stopSong()">STOP</button>
 
-    </section>
+</section>
 
-  </main>
-
-</div>
-
-
-<!-- YOUR AUDIO FILES -->
-<audio id="pagIbig" src="assets/pag-ibig.mp3"></audio>
+  </main></div><!-- AUDIO FILES --><audio id="pagIbig" src="assets/pag-ibig.mp3"></audio>
 <audio id="sino" src="assets/sino.mp3"></audio>
 <audio id="niki" src="assets/niki.mp3"></audio>
 
-
-<script src="script.js"></script>
-
-</body>
-          </html>
+<script src="script.js"></script></body>
+</html>
