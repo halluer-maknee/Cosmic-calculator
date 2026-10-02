@@ -530,3 +530,96 @@ button:active {
   }
 
 }
+/* MADE WITH HEART FOOTER */
+
+.made-by {
+  position: fixed;
+  bottom: 18px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  z-index: 20;
+
+  display: flex;
+  align-items: center;
+  gap: 7px;
+
+  font-size: 14px;
+  font-weight: 700;
+
+  white-space: nowrap;
+
+  text-shadow: 0 0 12px rgba(255,255,255,.4);
+}
+
+.heart {
+  font-size: 20px;
+
+  background: linear-gradient(
+    90deg,
+    #ff2775,
+    #ff4d4d,
+    #ff9d00,
+    #ffe45c,
+    #7cff9b,
+    #55c7ff,
+    #b56cff,
+    #ff2775
+  );
+
+  background-size: 300%;
+
+  -webkit-background-clip: text;
+  background-clip: text;
+
+  color: transparent;
+
+  animation: karaokeRainbow 3s linear infinite,
+             heartBeat 1s ease-in-out infinite;
+}
+
+.karaoke-text {
+  background: linear-gradient(
+    90deg,
+    #ff3b7d,
+    #ff8a3d,
+    #ffe45c,
+    #5cff9d,
+    #52d8ff,
+    #9b6cff,
+    #ff3b7d
+  );
+
+  background-size: 300%;
+
+  -webkit-background-clip: text;
+  background-clip: text;
+
+  color: transparent;
+
+  animation: karaokeRainbow 4s linear infinite;
+}
+
+@keyframes karaokeRainbow {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 150% 50%;
+  }
+
+  100% {
+    background-position: 300% 50%;
+  }
+}
+
+@keyframes heartBeat {
+  0%,100% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.25);
+  }
+}
